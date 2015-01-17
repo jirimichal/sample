@@ -14,8 +14,8 @@ gem 'rails', '4.1.8'
 
 gem 'rspec-rails', '~> 2.10.0', group: [:development, :test]
 
-
-gem 'pg'
+gem 'sqlite3', group: [:development, :test]
+gem 'pg', group: :production
 group :assets do
 
 # Use SCSS for stylesheets
