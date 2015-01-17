@@ -8,7 +8,7 @@ gem 'rails', '4.1.8'
 
 group :deployment, :text do
 	
-	gem 'sqlite3'
+#	gem 'sqlite3'
 	gem 'rspec-rails'
 end
 
