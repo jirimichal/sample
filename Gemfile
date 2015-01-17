@@ -4,11 +4,12 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
+group :production do
+  gem 'pg'
+end
 
-
-group :deployment, :text do
-	
-	gem 'sqlite3'
+group :deployment, :text do	
+	gem 'sqlite3',  :require => 'sqlite3' 
 	gem 'rspec-rails'
 end
 
@@ -26,9 +27,7 @@ group :test do
 	gem 'capybara'
 end
 
-group :production do
-	gem 'pg'
-end
+
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
