@@ -11,6 +11,7 @@ gem 'rails', '4.1.8'
 #  gem 'sqlite3'
 #  gem 'rspec-rails'
 #end
+gem 'rspec-rails', group: [:development, :test]
 gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: [:production]
 group :assets do
