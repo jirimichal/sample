@@ -9,7 +9,7 @@ group :production do
 end
 
 group :development, :text do	
-	gem 'sqlite3',  #:require => 'sqlite3' 
+	gem 'sqlite3'
 	gem 'rspec-rails'
 end
 
