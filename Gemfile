@@ -8,8 +8,8 @@ group :production do
   gem 'pg'
 end
 
-group :deployment, :text do	
-	gem 'sqlite3',  :require => 'sqlite3' 
+group :development, :text do	
+	gem 'sqlite3',  #:require => 'sqlite3' 
 	gem 'rspec-rails'
 end
 
