@@ -11,7 +11,9 @@ gem 'rails', '4.1.8'
 #  gem 'sqlite3'
 #  gem 'rspec-rails'
 #end
-gem 'rspec-rails', group: [:development, :test]
+
+gem 'rspec-rails', '~> 2.10.0', group: [:development, :test]
+
 gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: [:production]
 group :assets do
@@ -24,9 +26,7 @@ group :assets do
   gem 'coffee-rails', '~> 4.0.0'
 end
 
-group :test do
-  gem 'capybara'
-end
+gem "capybara", '~> 1.1.2', group: [:test]
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
