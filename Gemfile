@@ -13,7 +13,7 @@ gem 'bootstrap-sass', '2.0.0'
 #  gem 'sqlite3'
 #  gem 'rspec-rails'
 #end
-
+gem "minitest"
 gem 'rspec-rails', '~> 2.10.0', group: [:development, :test]
 
 gem 'sqlite3', group: [:development, :test]
