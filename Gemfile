@@ -14,10 +14,16 @@ gem 'bootstrap-sass', '2.0.0'
 #  gem 'rspec-rails'
 #end
 gem "minitest"
+
 gem 'rspec-rails', '~> 2.10.0', group: [:development, :test]
+
+
+
 
 gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: :production
+
+gem 'annotate', '~>2.5.0', group: :development
 group :assets do
 
 # Use SCSS for stylesheets
@@ -43,7 +49,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt'
 
 # Use unicorn as the app server
 # gem 'unicorn'
