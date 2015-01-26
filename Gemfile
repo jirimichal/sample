@@ -35,6 +35,7 @@ group :assets do
 end
 
 gem "capybara", '~> 1.1.2', group: [:test]
+gem 'factory_girl_rails', '~> 1.4.0', group: [:test]
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
@@ -50,6 +51,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
+
+gem 'database_cleaner', '~> 1.4.0'
 
 # Use unicorn as the app server
 # gem 'unicorn'
